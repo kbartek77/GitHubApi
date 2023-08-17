@@ -2,14 +2,13 @@ package com.bartek.GitHub.client;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
 import static com.github.tomakehurst.wiremock.client.WireMock.get;
-import static com.github.tomakehurst.wiremock.client.WireMock.stubFor;
 import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
 
 
-import com.bartek.GitHub.model.Dtos.Branch;
-import com.bartek.GitHub.model.Dtos.Repo;
-import com.bartek.GitHub.model.Dtos.Subs;
-import com.bartek.GitHub.model.Dtos.User;
+import com.bartek.GitHub.model.GitHubDtos.Branch;
+import com.bartek.GitHub.model.GitHubDtos.Repo;
+import com.bartek.GitHub.model.GitHubDtos.Subs;
+import com.bartek.GitHub.model.GitHubDtos.User;
 import com.bartek.GitHub.model.Entity.GitHubRepo;
 import com.bartek.GitHub.model.Entity.GitHubUser;
 import com.fasterxml.jackson.databind.ObjectMapper;

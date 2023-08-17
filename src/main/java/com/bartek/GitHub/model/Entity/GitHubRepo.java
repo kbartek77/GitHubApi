@@ -1,6 +1,9 @@
 package com.bartek.GitHub.model.Entity;
 
-import com.bartek.GitHub.model.Dtos.*;
+import com.bartek.GitHub.model.AppDtos.BranchApp;
+import com.bartek.GitHub.model.AppDtos.RepoApp;
+import com.bartek.GitHub.model.AppDtos.SubsApp;
+import com.bartek.GitHub.model.GitHubDtos.*;
 import lombok.*;
 
 import java.util.List;
@@ -10,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class GitHubRepo {
-    private Repo details;
-    private List<Branch> branches;
-    private List<Subs> subscribres;
+    private RepoApp details;
+    private List<BranchApp> branches;
+    private List<SubsApp> subscribers;
 }

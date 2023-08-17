@@ -1,7 +1,8 @@
 package com.bartek.GitHub.client;
 
 
-import com.bartek.GitHub.model.Dtos.*;
+import com.bartek.GitHub.config.FeignConfig;
+import com.bartek.GitHub.model.GitHubDtos.*;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-@FeignClient(name = "repository-details", url = "${api.github.url}")
+@FeignClient(name = "repository-details", url = "${api.github.url}", configuration = FeignConfig.class)
 public interface GitHubClient {
     @RequestMapping(method = RequestMethod.GET, value = "/repos/{owner}/{repo}/branches")
     List<Branch> showAllBranches(@PathVariable String owner, @PathVariable String repo);

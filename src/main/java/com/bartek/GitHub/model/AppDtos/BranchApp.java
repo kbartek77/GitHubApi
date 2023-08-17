@@ -1,4 +1,4 @@
-package com.bartek.GitHub.model.Dtos;
+package com.bartek.GitHub.model.AppDtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,8 +7,6 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Repo {
+public class BranchApp {
     private String name;
-    private String full_name;
-    private String description;
 }
