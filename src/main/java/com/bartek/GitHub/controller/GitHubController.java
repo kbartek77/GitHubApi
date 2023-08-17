@@ -44,10 +44,4 @@ public class GitHubController {
     public GitHubRepo getReposDetails(@PathVariable String owner, @PathVariable String repo) {
         return gitHubService.showReposDetails(owner, repo);
         }
-    }
-
-
-
-
-
-
+}

@@ -2,8 +2,8 @@ package com.bartek.GitHub.exceptions;
 
 import org.springframework.http.HttpStatus;
 
-public class UserNotFoundException extends Githubexception{
-    public UserNotFoundException (String message){
+public class DataNotFoundException extends GithubException {
+    public DataNotFoundException(String message){
         super(message, HttpStatus.NOT_FOUND);
     }
 }

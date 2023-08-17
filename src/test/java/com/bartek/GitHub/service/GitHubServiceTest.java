@@ -1,10 +1,10 @@
 package com.bartek.GitHub.service;
 
 import com.bartek.GitHub.client.GitHubClient;
-import com.bartek.GitHub.model.Dtos.Branch;
-import com.bartek.GitHub.model.Dtos.Repo;
-import com.bartek.GitHub.model.Dtos.Subs;
-import com.bartek.GitHub.model.Dtos.User;
+import com.bartek.GitHub.model.GitHubDtos.Branch;
+import com.bartek.GitHub.model.GitHubDtos.Repo;
+import com.bartek.GitHub.model.GitHubDtos.Subs;
+import com.bartek.GitHub.model.GitHubDtos.User;
 import com.bartek.GitHub.model.Entity.GitHubRepo;
 import com.bartek.GitHub.model.Entity.GitHubUser;
 import org.junit.jupiter.api.Test;

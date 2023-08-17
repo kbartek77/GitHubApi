@@ -1,18 +1,15 @@
-package com.bartek.GitHub.model.Entity;
+package com.bartek.GitHub.mapper;
 
 import com.bartek.GitHub.model.AppDtos.RepoApp;
 import com.bartek.GitHub.model.AppDtos.UserApp;
 import com.bartek.GitHub.model.GitHubDtos.Repo;
 import com.bartek.GitHub.model.GitHubDtos.User;
-import lombok.*;
+import org.mapstruct.Mapper;
 
 import java.util.List;
 
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class GitHubUser {
-    private UserApp details;
-    private List<RepoApp> repos;
+@Mapper(componentModel = "spring")
+public interface UserMapper {
+    User toGithubDto (UserApp userApp);
+    UserApp toAppDto(User user);
 }
